@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Shop in style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                </div>
+            </div>
+        </header>
+
+    <div class="container">
+        <div class="row">
+            <center>
+                <div class="col-8" style="margin-top: 55px">
+
+
+    <form method="post">{% csrf_token %}
+  <div class="mb-3">
+    <label for="name" class="form-label">username</label>
+    <input type="text" class="form-control" id="name" name="username" >
+
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" name="password">
+  </div>
+  <button type="submit" class="btn btn-secondary">login</button>
+</form>
+                </div>
+            </center>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+{% endblock %}
